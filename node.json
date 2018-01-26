@@ -2,5 +2,24 @@
   "name": "THW Detmold Termine",
   "permissions": {
     "network": "Must fetch schedule json from remote"
-  }
+  },
+  "options": [{
+    "title": "Time Zone",
+    "ui_width": 4,
+    "name": "timezone",
+    "type": "select",
+    "options": [
+      ["UTC", "UTC"],
+      ["Europe/London", "Europa / London"],
+      ["Europe/Berlin", "Europa / Berlin"]
+    ],
+    "default": "Europe/Berlin"
+  },{
+    "title": "Schedule URL",
+    "ui_width": 10,
+    "name": "schedule_url",
+    "doc_link": true,
+    "type": "string",
+    "default": "https://www.thw-detmold.de/termine.json"
+  }]
 }
