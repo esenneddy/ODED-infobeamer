@@ -41,9 +41,9 @@ def get_schedule(url):
   try:
     resp = urllib2.urlopen(url)
     schedule = resp.read()
-    with file("termine.json.new", "wb") as f:
+    with file("Termine.json.new", "wb") as f:
       f.write(schedule)
-    os.rename("termine.json.new), 
+    os.rename("Termine.json.new", "Termine.json"), 
   except Exception, err:
     traceback.print_exec()
     return False
