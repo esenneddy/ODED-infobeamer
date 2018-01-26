@@ -1,0 +1,6 @@
+{
+  "name": "THW Detmold Termine",
+  "permissions": {
+    "network": "Must fetch schedule json from remote"
+  }
+}
